@@ -1,0 +1,33 @@
+VOLCANO ERUPTION WARNING SYSTEM
+=============================================
+Original records: 44188
+Pre-eruption records: 414
+Warning window: 24 hours
+Features: ['latitude', 'longitude', 'depth', 'magnitude']
+
+Target counts:
+warning
+1    241
+0    173
+Name: count, dtype: int64
+
+Accuracy: 0.8558
+ROC-AUC: 0.9394
+
+Confusion Matrix:
+[[36  7]
+ [ 8 53]]
+
+Classification Report:
+                         precision    recall  f1-score   support
+
+More than 24 hours away       0.82      0.84      0.83        43
+        Within 24 hours       0.88      0.87      0.88        61
+
+               accuracy                           0.86       104
+              macro avg       0.85      0.85      0.85       104
+           weighted avg       0.86      0.86      0.86       104
+
+
+IMPORTANT LIMITATION:
+The earthquake catalog does not provide an explicit eruption label. The eruption onset and 24-hour warning target are project-defined using the known 2018 Kilauea eruption sequence.
